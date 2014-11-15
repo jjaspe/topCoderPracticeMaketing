@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="9df82f37-483d-457b-872e-57b950899566" name="Juan@CARMEN-PC 2014-11-14 22:51:06" runUser="Carmen-PC\Juan" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="6cc9f80f-8da3-4d6e-8519-ba94529b53ec">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Juan_CARMEN-PC 2014-11-14 22_51_06">
+      <DeploymentItem filename="C:\Users\Juan\Documents\Visual Studio 2010\Projects\topCoderPracticeMarketing\topCoderPracticeMaketing\topCoderPracticeMarketing\bin\Debug\topCoderPracticeMarketing.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-11-14T22:51:06.3333021-05:00" queuing="2014-11-14T22:51:06.3513031-05:00" start="2014-11-14T22:51:06.4733101-05:00" finish="2014-11-14T22:51:07.1173470-05:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="splitArrayTestDefault" storage="c:\users\juan\documents\visual studio 2010\projects\topcoderpracticemarketing\topcoderpracticemaketing\testproject1\bin\debug\testproject1.dll" id="5be70b10-a31b-d48b-2222-18b81a69d3bc">
+      <Execution id="a755b8c6-eaa2-4e39-bc68-b79495871559" />
+      <TestMethod codeBase="C:/Users/Juan/Documents/Visual Studio 2010/Projects/topCoderPracticeMarketing/topCoderPracticeMaketing/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.StringLoaderTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="splitArrayTestDefault" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="5be70b10-a31b-d48b-2222-18b81a69d3bc" executionId="a755b8c6-eaa2-4e39-bc68-b79495871559" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="a755b8c6-eaa2-4e39-bc68-b79495871559" testId="5be70b10-a31b-d48b-2222-18b81a69d3bc" testName="splitArrayTestDefault" computerName="CARMEN-PC" duration="00:00:00.0504050" startTime="2014-11-14T22:51:06.4893110-05:00" endTime="2014-11-14T22:51:07.0033404-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a755b8c6-eaa2-4e39-bc68-b79495871559">
+    </UnitTestResult>
+  </Results>
+</TestRun>

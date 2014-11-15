@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="4bd9f2a5-cf3f-4afe-8de0-a3f5b1891f8b" name="Juan@CARMEN-PC 2014-11-14 22:55:29" runUser="Carmen-PC\Juan" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="6cc9f80f-8da3-4d6e-8519-ba94529b53ec">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Juan_CARMEN-PC 2014-11-14 22_55_29">
+      <DeploymentItem filename="C:\Users\Juan\Documents\Visual Studio 2010\Projects\topCoderPracticeMarketing\topCoderPracticeMaketing\topCoderPracticeMarketing\bin\Debug\topCoderPracticeMarketing.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-11-14T22:55:29.1153324-05:00" queuing="2014-11-14T22:55:29.1373336-05:00" start="2014-11-14T22:55:29.1693355-05:00" finish="2014-11-14T22:55:29.7173668-05:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="loadDataAsBooleanData1Test" storage="c:\users\juan\documents\visual studio 2010\projects\topcoderpracticemarketing\topcoderpracticemaketing\testproject1\bin\debug\testproject1.dll" id="42316310-4e38-5929-f05b-d2d276e297d3">
+      <Execution id="e04a2da0-7d98-4b5d-a21d-57f3ff4a1f8d" />
+      <TestMethod codeBase="C:/Users/Juan/Documents/Visual Studio 2010/Projects/topCoderPracticeMarketing/topCoderPracticeMaketing/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.StringLoaderTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="loadDataAsBooleanData1Test" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="42316310-4e38-5929-f05b-d2d276e297d3" executionId="e04a2da0-7d98-4b5d-a21d-57f3ff4a1f8d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="e04a2da0-7d98-4b5d-a21d-57f3ff4a1f8d" testId="42316310-4e38-5929-f05b-d2d276e297d3" testName="loadDataAsBooleanData1Test" computerName="CARMEN-PC" duration="00:00:00.0364075" startTime="2014-11-14T22:55:29.2633409-05:00" endTime="2014-11-14T22:55:29.6833649-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e04a2da0-7d98-4b5d-a21d-57f3ff4a1f8d">
+    </UnitTestResult>
+  </Results>
+</TestRun>

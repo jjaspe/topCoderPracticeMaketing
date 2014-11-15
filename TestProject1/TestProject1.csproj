@@ -51,7 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StringLoaderTest.cs" />
+    <Compile Include="SolverTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\topCoderPracticeMarketing\topCoderPracticeMarketing.csproj">
