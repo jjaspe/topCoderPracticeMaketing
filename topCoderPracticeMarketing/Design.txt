@@ -13,6 +13,7 @@ count of the number of true, call it v1n
 -Do the same procedure on V2, remember V2 starts with n-v1n trues. Call it's count v2n.
 
 -If at the end v1n +v2n doesn't add up to n, then it isnt possible, otherwise we need to calculate how many ways
+ (actually as soon as we encounter a true in the v2 loop we could call it impossible)
 
 -The products that have conflict can only be grouped two ways, all in teens or all in adults. For the non-conflicts
 we can split them in any way between the two groups. So if there are m non-conflicts we are asking how many ways to

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="c5a57603-4150-4701-961d-eef08127c979" name="Juan@CARMEN-PC 2014-11-15 00:14:19" runUser="Carmen-PC\Juan" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="6cc9f80f-8da3-4d6e-8519-ba94529b53ec">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Juan_CARMEN-PC 2014-11-15 00_14_19">
+      <DeploymentItem filename="C:\Users\Juan\Documents\Visual Studio 2010\Projects\topCoderPracticeMarketing\topCoderPracticeMaketing\topCoderPracticeMarketing\bin\Debug\topCoderPracticeMarketing.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-11-15T00:14:19.9139186-05:00" queuing="2014-11-15T00:14:19.9389200-05:00" start="2014-11-15T00:14:19.9579211-05:00" finish="2014-11-15T00:14:20.5759565-05:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="solveTest4" storage="c:\users\juan\documents\visual studio 2010\projects\topcoderpracticemarketing\topcoderpracticemaketing\testproject1\bin\debug\testproject1.dll" id="ab1b8666-7c40-e6c4-4dd3-9ed0be841905">
+      <Execution id="0cab009b-a858-427b-a458-fc3cc503d8e3" />
+      <TestMethod codeBase="C:/Users/Juan/Documents/Visual Studio 2010/Projects/topCoderPracticeMarketing/topCoderPracticeMaketing/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.SolverTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="solveTest4" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="ab1b8666-7c40-e6c4-4dd3-9ed0be841905" executionId="0cab009b-a858-427b-a458-fc3cc503d8e3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="0cab009b-a858-427b-a458-fc3cc503d8e3" testId="ab1b8666-7c40-e6c4-4dd3-9ed0be841905" testName="solveTest4" computerName="CARMEN-PC" duration="00:00:00.0630839" startTime="2014-11-15T00:14:19.9839226-05:00" endTime="2014-11-15T00:14:20.5369542-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0cab009b-a858-427b-a458-fc3cc503d8e3">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;2&gt;. Actual:&lt;-1&gt;. </Message>
+          <StackTrace>   at TestProject1.SolverTest.solveTest4() in C:\Users\Juan\Documents\Visual Studio 2010\Projects\topCoderPracticeMarketing\topCoderPracticeMaketing\TestProject1\SolverTest.cs:line 343
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
