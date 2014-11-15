@@ -186,6 +186,21 @@ namespace TestProject1
             actual = target.countNonConflicts(data);
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void countNonConflictsTest5()
+        {
+            Solver target = new Solver(); // TODO: Initialize to an appropriate value
+            bool[,] data = { { false, true, false,true,true }, 
+                            { true, false, true,false,false }, 
+                            { false, true, false, true,false },
+                            { true,false,true,false,false},
+                            { true,false,false,false,false } };  // TODO: Initialize to an appropriate value
+            int expected = 0; // TODO: Initialize to an appropriate value
+            int actual;
+            actual = target.countNonConflicts(data);
+            Assert.AreEqual(expected, actual);
+        }
         #endregion
 
         #region Load Data Tests
@@ -248,6 +263,25 @@ namespace TestProject1
         }
 
         [TestMethod]
+        public void loadDataAsBooleanDataTest4()
+        {
+            Solver target = new Solver(); // TODO: Initialize to an appropriate value
+            string[] data = {"1 4",
+                                "2",
+                                "3",
+                                "0",
+	                        ""}; // TODO: Initialize to an appropriate value
+            bool[,] expected = { { false, true, false,true,true }, 
+                                 { true, false, true,false,false }, 
+                                 { false, true, false, true,false },
+                                 { true,false,true,false,false},
+                                 { true,false,false,false,false } }; // TODO: Initialize to an appropriate value
+            bool[,] actual;
+            actual = target.loadDataAsBooleans(data);
+            Assert.IsTrue(areArraysEqual(expected, actual));
+        }
+
+        [TestMethod]
         public void expectedLengthTest1()
         {
             Solver target = new Solver(); // TODO: Initialize to an appropriate value
@@ -277,6 +311,32 @@ namespace TestProject1
         {
             Solver target = new Solver(); // TODO: Initialize to an appropriate value
             string[] data = {""}; // TODO: Initialize to an appropriate value
+            double expected = 2; // TODO: Initialize to an appropriate value
+            double actual;
+            actual = target.solve(data);
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void solveTest3()
+        {
+            Solver target = new Solver(); // TODO: Initialize to an appropriate value
+            string[] data = { "0" }; // TODO: Initialize to an appropriate value
+            double expected = 2; // TODO: Initialize to an appropriate value
+            double actual;
+            actual = target.solve(data);
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void solveTest4()
+        {
+            Solver target = new Solver(); // TODO: Initialize to an appropriate value
+            string[] data = {"1 4",
+                                "2",
+                                "3",
+                                "0",
+	                        ""}; // TODO: Initialize to an appropriate value
             double expected = 2; // TODO: Initialize to an appropriate value
             double actual;
             actual = target.solve(data);

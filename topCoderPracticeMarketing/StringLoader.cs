@@ -129,8 +129,11 @@ namespace topCoderPracticeMarketing
                     {
                         if (grid[i, j])
                         {
-                            v1[j] = false;
-                            truthCounter1--;
+                            if (v1[j])//Only set to false and decrement if it was true so we dont recount a false twice
+                            {
+                                v1[j] = false;
+                                truthCounter1--;
+                            }
                         }
                     }
                 }
@@ -149,8 +152,11 @@ namespace topCoderPracticeMarketing
                     {
                         if (grid[i, j])
                         {
-                            v2[j] = false;
-                            truthCounter2--;
+                            if (v2[j])
+                            {
+                                v2[j] = false;
+                                truthCounter2--;
+                            }
                         }
                     }
                 }
@@ -159,7 +165,9 @@ namespace topCoderPracticeMarketing
             //Is it possible
             if (truthCounter1 + truthCounter2 == data.Length)
             {
-                return Math.Pow(2, nonConflicts + 1);
+                //The expression multiplying with the one takes care of the case where all the elements are 
+                //non-conflicts
+                return Math.Pow(2, nonConflicts + 1*(data.Length>nonConflicts?1:0) );
             }
 
             return -1;
