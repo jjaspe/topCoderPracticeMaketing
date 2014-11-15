@@ -64,15 +64,58 @@ namespace TestProject1
         #endregion
 
 
+        #region Grid tests
+        [TestMethod]
+        public void getGridDefaultTest()
+        {
+            StringLoader target = new StringLoader(); // TODO: Initialize to an appropriate value
+            bool[,] expected = {}; // TODO: Initialize to an appropriate value
+            bool[,] actual;
+            actual = target.getGrid(0);
+            Assert.IsTrue(areArraysEqual(expected, actual));
+        }
+
+        [TestMethod]
+        public void getGridDimOneTest()
+        {
+            StringLoader target = new StringLoader(); // TODO: Initialize to an appropriate value
+            bool[,] expected = {{false} }; // TODO: Initialize to an appropriate value
+            bool[,] actual;
+            actual = target.getGrid(1);
+            Assert.IsTrue(areArraysEqual(expected, actual));
+        }
+
+        [TestMethod]
+        public void getGridDimTwoTest()
+        {
+            StringLoader target = new StringLoader(); // TODO: Initialize to an appropriate value
+            bool[,] expected = { { false,false },{false,false} }; // TODO: Initialize to an appropriate value
+            bool[,] actual;
+            actual = target.getGrid(2);
+            Assert.IsTrue(areArraysEqual(expected, actual));
+        }
+        #endregion
+
         /// <summary>
         ///A test for loadDataAsBooleans
         ///</summary>
         [TestMethod()]
-        public void loadDataAsBooleansTest()
+        public void loadDataAsBooleanDefaultTest()
         {
             StringLoader target = new StringLoader(); // TODO: Initialize to an appropriate value
             string[] data = {}; // TODO: Initialize to an appropriate value
             bool[,] expected = {}; // TODO: Initialize to an appropriate value
+            bool[,] actual;
+            actual = target.loadDataAsBooleans(data);
+            Assert.IsTrue(areArraysEqual(expected, actual));
+        }
+
+        [TestMethod]
+        public void loadDataAsBooleanData1Test()
+        {
+            StringLoader target = new StringLoader(); // TODO: Initialize to an appropriate value
+            string[] data = {"",""}; // TODO: Initialize to an appropriate value
+            bool[,] expected = {{false,false},{false,false}}; // TODO: Initialize to an appropriate value
             bool[,] actual;
             actual = target.loadDataAsBooleans(data);
             Assert.IsTrue(areArraysEqual(expected, actual));
@@ -96,7 +139,7 @@ namespace TestProject1
                 return false;
             for (int i = 0; i < array1.Rank; i++)
             {
-                for (int j = 0; j < array1.Length / array1.Rank; i++)
+                for (int j = 0; j < array1.Length / array1.Rank; j++)
                 {
                     if (array1[i,j]!=array2[i,j])
                         return false;
