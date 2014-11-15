@@ -1,0 +1,4 @@
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\topCoderPracticeMarketing\topCoderPracticeMaketing\topCoderPracticeMarketing\bin\Debug\topCoderPracticeMarketing.exe
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\topCoderPracticeMarketing\topCoderPracticeMaketing\topCoderPracticeMarketing\bin\Debug\topCoderPracticeMarketing.pdb
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\topCoderPracticeMarketing\topCoderPracticeMaketing\topCoderPracticeMarketing\obj\x86\Debug\topCoderPracticeMarketing.exe
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\topCoderPracticeMarketing\topCoderPracticeMaketing\topCoderPracticeMarketing\obj\x86\Debug\topCoderPracticeMarketing.pdb
