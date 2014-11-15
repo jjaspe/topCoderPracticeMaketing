@@ -1,0 +1,22 @@
+﻿- Start by turning the incoming String array into a two dimensional array of bools (grid)
+	with where grid[i][j]=true if i conflicts with j, false otherwise. Remember to test for symmetry, i.e.
+	if j conflicts with i, then i conflicts with j even if it is not explicitly specified.
+- Create two arrays of bool, V1,V2, that will hold the products going into set 1 and 2, fill them both
+with true.
+
+-Loop through the rows of V1, every time we find a true at index i, it means this element goes in V1, look through
+all the rows of grid[i] and set V1[j]= false for every grid[i][j]=true, basically we are removing the conflicts from
+V1. To continue the loop get the next V1[i] = true. Also set V2[i] =false on every step where V1[i]=true, and keep
+count of the number of true, call it v1n
+
+
+-Do the same procedure on V2, remember V2 starts with n-v1n trues. Call it's count v2n.
+
+-If at the end v1n +v2n doesn't add up to n, then it isnt possible, otherwise we need to calculate how many ways
+
+-The products that have conflict can only be grouped two ways, all in teens or all in adults. For the non-conflicts
+we can split them in any way between the two groups. So if there are m non-conflicts we are asking how many ways to
+split m things into two groups, which is the same as the number of binary numbers with m digits, so 2^m. That together
+with the two ways from conflicters will give 2^m+1 ways.
+
+
